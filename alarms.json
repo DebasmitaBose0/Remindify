@@ -1,1 +1,53 @@
-[{"time": "08:45", "message": "Wake up Babin", "repeat": "Daily", "status": "active", "snooze_until": null}]
+[
+  {
+    "id": 1,
+    "time": "08:45",
+    "message": "Wake up Mohor",
+    "label": "Morning Alarm",
+    "repeat": "Daily",
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "sound": "default_tone.mp3",
+    "status": "active",
+    "snooze": {
+      "enabled": true,
+      "duration_minutes": 10,
+      "max_snoozes": 3,
+      "snooze_until": null
+    },
+    "timezone": "UTC+5:30"
+  },
+  {
+    "id": 2,
+    "time": "12:00",
+    "message": "Lunch break",
+    "label": "Lunchtime Reminder",
+    "repeat": "Weekdays",
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "sound": "chime.mp3",
+    "status": "active",
+    "snooze": {
+      "enabled": false,
+      "duration_minutes": 0,
+      "max_snoozes": 0,
+      "snooze_until": null
+    },
+    "timezone": "UTC+5:30"
+  },
+  {
+    "id": 3,
+    "time": "18:30",
+    "message": "Workout time",
+    "label": "Evening Exercise",
+    "repeat": "Custom",
+    "days": ["Monday", "Wednesday", "Friday"],
+    "sound": "bell.mp3",
+    "status": "inactive",
+    "snooze": {
+      "enabled": true,
+      "duration_minutes": 5,
+      "max_snoozes": 2,
+      "snooze_until": null
+    },
+    "timezone": "UTC+5:30"
+  }
+]
